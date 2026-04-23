@@ -4,23 +4,23 @@
 
 /* Design tokens ----------------------------------------------------------- */
 :root {
-  /* Navy (primary) */
-  --navy-950: #060F28;
-  --navy-900: #0B1B3B;
-  --navy-800: #142A54;
-  --navy-700: #1D3B6F;
-  --navy-600: #2B5088;
-  --navy-500: #4B6BA0;
-  --navy-300: #8FA3C2;
-  --navy-100: #D5DDEC;
+  /* Primary dark — forest green (token names kept for simplicity) */
+  --navy-950: #0F2117;
+  --navy-900: #1E3B26;    /* deep forest green */
+  --navy-800: #284C32;
+  --navy-700: #335F3F;
+  --navy-600: #40724F;
+  --navy-500: #5A8A68;
+  --navy-300: #99B8A2;
+  --navy-100: #D8E5DC;
 
-  /* Warm accent — terracotta */
-  --coral-700: #8F3A22;
-  --coral-600: #B04A2A;
-  --coral-500: #C65A33;   /* terracotta, primary accent */
-  --coral-400: #D8805E;
-  --coral-100: #EED4C5;
-  --coral-50:  #F8ECE2;
+  /* Warm accent — copper */
+  --coral-700: #6E3E20;
+  --coral-600: #8A4F28;
+  --coral-500: #A8623A;   /* copper, primary accent */
+  --coral-400: #C28763;
+  --coral-100: #E8D3BF;
+  --coral-50:  #F5EBDE;
 
   /* Secondary warm (soft gold, subtle use) */
   --gold-500: #E6B24E;
@@ -36,11 +36,11 @@
   --line-strong:  #D0C7B4;
 
   /* Tinted surfaces (brand-colored but very pale) */
-  --pale-blue:    #EFF3FA;
-  --pale-blue-2:  #E6ECF6;
+  --pale-blue:    #EEF3EF;   /* pale green tint */
+  --pale-blue-2:  #DDE8E0;
   --pale-peach:   #F0ECE4;   /* warm neutral gray */
   --pale-peach-2: #E4DED3;
-  --line-blue:    #D9E1ED;
+  --line-blue:    #CBD8CE;
   --line-peach:   #D9D2C3;
 
   /* Semantic tags */
@@ -147,9 +147,9 @@ strong { font-weight: 600; color: var(--ink); }
 .btn--accent {
   background: var(--coral-500);
   color: var(--paper);
-  box-shadow: 0 6px 18px -8px rgba(198, 90, 51, 0.55);
+  box-shadow: 0 6px 18px -8px rgba(168, 98, 58, 0.55);
 }
-.btn--accent:hover { background: var(--coral-600); transform: translateY(-1px); box-shadow: 0 10px 24px -10px rgba(198, 90, 51, 0.7); }
+.btn--accent:hover { background: var(--coral-600); transform: translateY(-1px); box-shadow: 0 10px 24px -10px rgba(168, 98, 58, 0.7); }
 .btn--ghost {
   background: rgba(255, 255, 255, 0.75);
   color: var(--navy-900);
@@ -278,7 +278,7 @@ strong { font-weight: 600; color: var(--ink); }
   top: 10%;
   width: 540px;
   height: 540px;
-  background: radial-gradient(circle, rgba(198, 90, 51, 0.22), transparent 60%);
+  background: radial-gradient(circle, rgba(168, 98, 58, 0.22), transparent 60%);
   filter: blur(20px);
 }
 
@@ -302,7 +302,7 @@ strong { font-weight: 600; color: var(--ink); }
   height: 7px;
   border-radius: 50%;
   background: var(--coral-500);
-  box-shadow: 0 0 0 4px rgba(198, 90, 51, 0.15);
+  box-shadow: 0 0 0 4px rgba(168, 98, 58, 0.15);
 }
 
 .hero__title {
@@ -394,7 +394,7 @@ strong { font-weight: 600; color: var(--ink); }
   margin: 0 auto;
 }
 .qualifier__highlight {
-  background: linear-gradient(180deg, transparent 58%, rgba(198, 90, 51, 0.28) 58%);
+  background: linear-gradient(180deg, transparent 58%, rgba(168, 98, 58, 0.28) 58%);
   padding: 0 4px;
   font-style: italic;
   color: var(--coral-700);
@@ -511,8 +511,8 @@ strong { font-weight: 600; color: var(--ink); }
   color: var(--cream);
 }
 .flow__node--warn {
-  background: rgba(198, 90, 51, 0.1) !important;
-  border-color: rgba(198, 90, 51, 0.35) !important;
+  background: rgba(168, 98, 58, 0.1) !important;
+  border-color: rgba(168, 98, 58, 0.35) !important;
   color: var(--coral-400) !important;
 }
 .flow__node--warn em { color: var(--coral-400); font-style: italic; }
@@ -567,7 +567,7 @@ strong { font-weight: 600; color: var(--ink); }
   top: -20%;
   width: 440px;
   height: 440px;
-  background: radial-gradient(circle, rgba(198, 90, 51, 0.08), transparent 65%);
+  background: radial-gradient(circle, rgba(168, 98, 58, 0.08), transparent 65%);
   pointer-events: none;
   z-index: 0;
 }
@@ -683,7 +683,7 @@ strong { font-weight: 600; color: var(--ink); }
   display: inline-block;
   padding: 5px 14px;
   background: var(--coral-50);
-  border: 1px solid rgba(198, 90, 51, 0.25);
+  border: 1px solid rgba(168, 98, 58, 0.25);
   border-radius: var(--r-pill);
   line-height: 1.3;
 }
@@ -914,8 +914,8 @@ strong { font-weight: 600; color: var(--ink); }
   color: var(--ink-muted);
 }
 .recon-row--highlight {
-  background: rgba(198, 90, 51, 0.08);
-  border-color: rgba(198, 90, 51, 0.3);
+  background: rgba(168, 98, 58, 0.08);
+  border-color: rgba(168, 98, 58, 0.3);
 }
 .recon-row__cell {
   display: flex;
@@ -1094,7 +1094,7 @@ strong { font-weight: 600; color: var(--ink); }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 12% 20%, rgba(198, 90, 51, 0.13), transparent 40%),
+    radial-gradient(circle at 12% 20%, rgba(168, 98, 58, 0.13), transparent 40%),
     radial-gradient(circle at 88% 72%, rgba(143, 163, 194, 0.12), transparent 42%);
   pointer-events: none;
 }
@@ -1127,7 +1127,7 @@ strong { font-weight: 600; color: var(--ink); }
 .multi__card:hover {
   background: rgba(255, 255, 255, 0.07);
   transform: translateY(-2px);
-  border-color: rgba(198, 90, 51, 0.3);
+  border-color: rgba(168, 98, 58, 0.3);
 }
 .multi__icon {
   font-size: 1.5rem;
@@ -1324,7 +1324,7 @@ strong { font-weight: 600; color: var(--ink); }
   top: 10%;
   width: 480px;
   height: 480px;
-  background: radial-gradient(circle, rgba(198, 90, 51, 0.1), transparent 60%);
+  background: radial-gradient(circle, rgba(168, 98, 58, 0.1), transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
@@ -1484,7 +1484,7 @@ strong { font-weight: 600; color: var(--ink); }
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 0%, rgba(198, 90, 51, 0.18), transparent 60%);
+  background: radial-gradient(circle at 50% 0%, rgba(168, 98, 58, 0.18), transparent 60%);
   pointer-events: none;
 }
 .cta__inner {
@@ -1504,8 +1504,8 @@ strong { font-weight: 600; color: var(--ink); }
 .cta__badge {
   display: inline-block;
   padding: 6px 14px;
-  background: rgba(198, 90, 51, 0.15);
-  border: 1px solid rgba(198, 90, 51, 0.4);
+  background: rgba(168, 98, 58, 0.15);
+  border: 1px solid rgba(168, 98, 58, 0.4);
   color: var(--coral-400);
   border-radius: var(--r-pill);
   font-size: var(--fs-xs);
