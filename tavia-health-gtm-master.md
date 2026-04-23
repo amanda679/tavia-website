@@ -40,7 +40,7 @@ Tavia Health is an AI-powered revenue cycle management platform built specifical
 
 ### Core Product Capabilities
 
-- **ERA Reconciliation**: Automated matching of ERA data from clearinghouses to bank deposits (EFT, checks, ACH). Handles denials, partial denials, recoupments, reprocessed claims, payer-specific fees (Zealous, etc.), and ERA-to-bank discrepancies.
+- **ERA Reconciliation**: Automated matching of ERA data from clearinghouses to bank deposits (EFT, checks, ACH). Handles denials, partial denials, recoupments, reprocessed claims, payer-specific fees (Zelis, etc.), and ERA-to-bank discrepancies.
 - **Denial Tracking**: Automated denial detection from ERA data with CARC/RARC code classification, resolution tracking, and biller notes preservation.
 - **Claims Review Queue**: Pulls unsent claims from Postgres, matches to chart notes, uses AI (Bedrock/Claude Sonnet) for modifier analysis (59, 96, 95, CO), outputs to billing operations.
 - **VOB Automation**: Retell AI phone agent for verification of benefits calls, including IVR navigation, batch calling, and payer-specific scripting.
@@ -297,7 +297,7 @@ Three mechanism tests:
 > "So much of accounting is reconciliation. And the fact that medical doesn't work so easily is annoying."
 
 **On the payer mess:**
-> "A payer will take a dollar or 50 off of each claim because they're paying through Zealous. Or the ERA will say 120, but 119 hits the bank account. And it's not recorded anywhere."
+> "A payer will take a dollar or 50 off of each claim because they're paying through Zelis. Or the ERA will say 120, but 119 hits the bank account. And it's not recorded anywhere."
 
 **On the previous tool failure:**
 > "The new RCM director didn't like the way that we were posting specific takebacks... the way that the software was built was built on a certain rubric. So now, the person that built it was upset that we changed everything. He's like, fine. If you don't want to do it my way, then do it your way."
@@ -512,7 +512,7 @@ Three mechanism tests:
 | **Time cost** | ~20 hours/month | A couple days/month |
 | **What they reconcile** | ERA ↔ bank ↔ Saya ACH ↔ MSO spreadsheets ↔ check scanner ↔ mobile deposits | ERA ↔ schedule ↔ infant program owed ↔ insurance paid |
 | **Data sources** | Saya, RCM director spreadsheet, Chase Business, Chase Connect, EMR, paper checks, mobile deposits | In Sora, Availity, paper calendar, payer portals |
-| **Edge cases** | Zealous fees, $1 ERA-vs-bank discrepancies, take-backs | Multi-client ERAs requiring manual redaction, denials without a system |
+| **Edge cases** | Zelis fees, $1 ERA-vs-bank discrepancies, take-backs | Multi-client ERAs requiring manual redaction, denials without a system |
 | **Central frustration** | "A thorn in my side" — data inconsistency = trust erosion | "Tedious" — manual pulling and matching is worst |
 | **Why they care** | "Reconciliation is the trust of the MSO" — growth blocker | "I need help" — time and expertise blocker |
 | **What broke last fix** | Custom software failed from RCM/dev posting conflict | Never tried — "checks more than having a system" |
@@ -596,7 +596,7 @@ Headline test: **"If your RCM director hands you a spreadsheet every week, this 
 >
 > Here's why reconciliation is so hard. The data coming back from payers is inconsistent. Every payer has its own logic.
 >
-> A claim comes back denied and the reason is buried in a code on line 47 of the ERA. A claim comes back partially denied — they paid you for the eval but not the manual therapy add-on, and now your expected amount doesn't match your paid amount and nobody can tell you why. A payer does a recoupment six weeks after the fact. They decide they overpaid you in March, and in May they quietly take it back by debiting against a new claim. Your biller sees the takeback. Your bank sees the reduced deposit. Nothing lines up. A claim gets reprocessed and the new ERA shows a different amount than the original — your posting from last week is now wrong. Aetna pays through a pricer and takes a dollar off the claim. Cigna's ERA says 120 but 119 hits the bank because of a Zealous fee that was never documented anywhere.
+> A claim comes back denied and the reason is buried in a code on line 47 of the ERA. A claim comes back partially denied — they paid you for the eval but not the manual therapy add-on, and now your expected amount doesn't match your paid amount and nobody can tell you why. A payer does a recoupment six weeks after the fact. They decide they overpaid you in March, and in May they quietly take it back by debiting against a new claim. Your biller sees the takeback. Your bank sees the reduced deposit. Nothing lines up. A claim gets reprocessed and the new ERA shows a different amount than the original — your posting from last week is now wrong. Aetna pays through a pricer and takes a dollar off the claim. Cigna's ERA says 120 but 119 hits the bank because of a Zelis fee that was never documented anywhere.
 >
 > This is where most reconciliation tools fall over. They match deterministically on amount and date. The moment the payer does anything clever, the match breaks.
 >
@@ -650,7 +650,7 @@ Headline test: **"If your RCM director hands you a spreadsheet every week, this 
 A downloadable guide with actual logic in it — not a generic whitepaper. Should include:
 
 - How to structure reconciliation across multiple payment streams
-- Common ERA matching pitfalls by payer (Zealous fees, recoupments, reprocessing)
+- Common ERA matching pitfalls by payer (Zelis fees, recoupments, reprocessing)
 - The 80/20 rule: deterministic matching for most transactions, manual review for edge cases
 - Simple framework for tracking denials, partial denials, and take-backs
 - Checklist: "What to do when the ERA and the bank don't match"

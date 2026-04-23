@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"index: HTTP %{http_code}\\\\n\" http://localhost:8734/index.html)",
+      "Bash(curl -s -o /dev/null -w \"styles: HTTP %{http_code}\\\\n\" http://localhost:8734/styles.css)",
+      "Bash(curl -s -o /dev/null -w \"script: HTTP %{http_code}\\\\n\" http://localhost:8734/script.js)",
+      "Bash(curl -s -o /dev/null -w \"index: %{http_code}\\\\nstyles: \" http://localhost:8734/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\nscript: \" http://localhost:8734/styles.css)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8734/script.js)",
+      "Bash(curl -s http://localhost:8734/index.html)",
+      "Bash(curl -s -o /dev/null -w \"status: %{http_code}\\\\n\" http://localhost:8734/index.html)",
+      "Bash(curl *)"
+    ]
+  }
+}
