@@ -14,13 +14,13 @@
   --navy-300: #8FA3C2;
   --navy-100: #D5DDEC;
 
-  /* Warm accent (coral) */
-  --coral-700: #C63E2D;
-  --coral-600: #E85337;
-  --coral-500: #F26848;   /* primary accent */
-  --coral-400: #F7896D;
-  --coral-100: #FBDDD2;
-  --coral-50:  #FDF1EC;
+  /* Warm accent (terracotta) */
+  --coral-700: #8F3A22;
+  --coral-600: #B04A2A;
+  --coral-500: #C65A33;   /* primary accent */
+  --coral-400: #D8805E;
+  --coral-100: #EED4C5;
+  --coral-50:  #F8ECE2;
 
   /* Secondary warm (soft gold, subtle use) */
   --gold-500: #E6B24E;
@@ -38,10 +38,10 @@
   /* Tinted surfaces (brand-colored but very pale) */
   --pale-blue:    #EFF3FA;
   --pale-blue-2:  #E6ECF6;
-  --pale-peach:   #FDF2EC;
-  --pale-peach-2: #FAE7DC;
+  --pale-peach:   #F0ECE4;   /* warm neutral gray, was peach */
+  --pale-peach-2: #E4DED3;
   --line-blue:    #D9E1ED;
-  --line-peach:   #F3DDCD;
+  --line-peach:   #D9D2C3;
 
   /* Semantic tags */
   --ok-500:    #2E9573;
@@ -51,8 +51,8 @@
   --info-500:  #4A7BBF;
 
   /* Type */
-  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
   --font-mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
 
   /* Scale */
