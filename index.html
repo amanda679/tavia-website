@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tavia Health — The billing operations platform therapy MSOs run on</title>
+  <meta name="description" content="Tavia Health is the AI-native billing operations platform for outpatient therapy MSOs — from verification of benefits through ERA-to-bank reconciliation to clinician payouts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand" aria-label="Tavia Health home">
+        <span class="nav__mark" aria-hidden="true"></span>
+        <span class="nav__wordmark">Tavia Health</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#problems">Platform</a>
+        <a href="#impact">Impact</a>
+        <a href="#multi">Multi-location</a>
+        <a href="#founder">About</a>
+      </nav>
+      <a href="#cta" class="btn btn--accent nav__cta">Book a call</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="eyebrow reveal">
+          <span class="eyebrow__dot"></span>
+          Built for outpatient therapy MSOs
+        </div>
+        <h1 class="hero__title reveal">
+          Know what you're <em>owed</em>.<br />
+          See what hit the <em>bank</em>.
+        </h1>
+        <p class="hero__sub reveal">
+          Tavia Health is the AI-native billing operations platform that multi-location therapy practices run on — from verification of benefits through ERA-to-bank reconciliation to clinician payouts. Across every entity, every payer, every payment rail.
+        </p>
+        <div class="hero__ctas reveal">
+          <a href="#cta" class="btn btn--accent btn--lg">Book a 30-min call</a>
+          <a href="#problems" class="btn btn--ghost btn--lg">See how it works</a>
+        </div>
+        <div class="hero__proof reveal">
+          <div class="proof-chip">
+            <span class="proof-chip__num">5 hrs<span class="proof-chip__arrow">→</span>20 min</span>
+            <span class="proof-chip__label">weekly reconciliation in our own practice</span>
+          </div>
+          <div class="proof-chip">
+            <span class="proof-chip__num">$3K</span>
+            <span class="proof-chip__label">overpayment caught in week one</span>
+          </div>
+          <div class="proof-chip">
+            <span class="proof-chip__num">2</span>
+            <span class="proof-chip__label">signed MSO &amp; IPA design partners</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__grid"></div>
+        <div class="hero__glow"></div>
+      </div>
+    </section>
+
+    <!-- SELF-SELECT / QUALIFIER -->
+    <section class="qualifier">
+      <div class="container">
+        <p class="qualifier__text reveal">
+          If your RCM director hands you a <span class="qualifier__highlight">spreadsheet every week</span> —<br />
+          this is for you.
+        </p>
+      </div>
+    </section>
+
+    <!-- THE MISMATCH -->
+    <section class="mismatch" id="mismatch">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-head__eyebrow">The structural problem</span>
+          <h2 class="section-head__title">Most businesses get paid the way a vending machine does.<br /><em>Yours doesn't.</em></h2>
+          <p class="section-head__lede">
+            In a normal business, the person who buys the service is the person who pays, and it all lands in one account on the same day. In a therapy MSO, a single visit ripples out into a week-long, multi-source money trail that nobody can see end to end.
+          </p>
+        </div>
+
+        <div class="diagram reveal">
+          <div class="diagram__col diagram__col--normal">
+            <div class="diagram__label">A normal business</div>
+            <div class="flow flow--linear">
+              <div class="flow__node">Customer</div>
+              <div class="flow__arrow" aria-hidden="true">→</div>
+              <div class="flow__node">Service</div>
+              <div class="flow__arrow" aria-hidden="true">→</div>
+              <div class="flow__node">Payment</div>
+              <div class="flow__arrow" aria-hidden="true">→</div>
+              <div class="flow__node flow__node--ok">Bank</div>
+            </div>
+            <p class="diagram__caption">One customer. One payment. One account. Done.</p>
+          </div>
+
+          <div class="diagram__col diagram__col--msot">
+            <div class="diagram__label diagram__label--accent">Your therapy MSO</div>
+            <div class="flow flow--tangled">
+              <div class="flow__node">Patient visit</div>
+              <ul class="flow__fan">
+                <li>Primary payer ERA</li>
+                <li>Secondary payer ERA</li>
+                <li>Patient responsibility</li>
+                <li>Recoupment (6 wks later)</li>
+                <li>Partial denial</li>
+                <li>Zealous / pricer fees</li>
+                <li>MSO billing spreadsheet</li>
+                <li>Check at Brooklyn office</li>
+                <li>Mobile deposit (director)</li>
+              </ul>
+              <div class="flow__arrow flow__arrow--fan" aria-hidden="true">↓</div>
+              <div class="flow__node flow__node--warn">Four bank accounts, three spreadsheets, one question: <em>did we actually get paid?</em></div>
+            </div>
+            <p class="diagram__caption">Every visit fractures into nine money trails. Nothing lines up by default.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TWO PROBLEMS -->
+    <section class="problems" id="problems">
+      <div class="container">
+
+        <!-- Problem 1: Front end -->
+        <article class="problem problem--one reveal">
+          <div class="problem__copy">
+            <span class="problem__num">01 — Front end</span>
+            <h2 class="problem__title">Before the visit: <em>can you see this patient, and for how much?</em></h2>
+            <p class="problem__lede">
+              Verification of benefits, prior auth, and patient responsibility shouldn't be a 40-minute phone call per patient. They shouldn't be a Google Sheet. And they definitely shouldn't be the reason a patient gets told one number at intake and billed another after the visit.
+            </p>
+            <ul class="problem__list">
+              <li><strong>Automated VOB</strong> via AI phone agent — including IVR navigation, batch calling, and payer-specific scripting.</li>
+              <li><strong>Patient responsibility</strong> calculated up front and tracked against what actually gets collected.</li>
+              <li><strong>Deductible &amp; max-OOP visibility</strong> across the patient's full claims activity, not just what your EMR has seen.</li>
+              <li><strong>Claims review queue</strong> — AI modifier analysis (59, 96, 95, CO) before submission, not after denial.</li>
+            </ul>
+          </div>
+          <div class="problem__mock">
+            <div class="mock mock--vob">
+              <div class="mock__chrome">
+                <span class="mock__dot"></span><span class="mock__dot"></span><span class="mock__dot"></span>
+                <span class="mock__title">VOB Queue · Monday</span>
+              </div>
+              <div class="mock__body">
+                <div class="mock__row">
+                  <div class="mock__cell mock__cell--name">K. Alvarez</div>
+                  <div class="mock__cell mock__cell--payer">BCBS NY</div>
+                  <div class="mock__cell mock__cell--status status--done">Verified · $35 copay</div>
+                </div>
+                <div class="mock__row">
+                  <div class="mock__cell mock__cell--name">M. Chen</div>
+                  <div class="mock__cell mock__cell--payer">Aetna</div>
+                  <div class="mock__cell mock__cell--status status--done">Verified · deductible met</div>
+                </div>
+                <div class="mock__row">
+                  <div class="mock__cell mock__cell--name">J. Patel</div>
+                  <div class="mock__cell mock__cell--payer">United</div>
+                  <div class="mock__cell mock__cell--status status--warn">Auth required — 8 visits left</div>
+                </div>
+                <div class="mock__row">
+                  <div class="mock__cell mock__cell--name">S. Rivera</div>
+                  <div class="mock__cell mock__cell--payer">Cigna</div>
+                  <div class="mock__cell mock__cell--status status--info">Calling payer · 4m on hold</div>
+                </div>
+                <div class="mock__row mock__row--muted">
+                  <div class="mock__cell mock__cell--name">L. Okafor</div>
+                  <div class="mock__cell mock__cell--payer">Humana</div>
+                  <div class="mock__cell mock__cell--status">Queued</div>
+                </div>
+              </div>
+              <div class="mock__footnote">Mock — illustrative, not live data.</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Problem 2: Back end / Reconciliation -->
+        <article class="problem problem--two reveal">
+          <div class="problem__mock">
+            <div class="mock mock--recon">
+              <div class="mock__chrome">
+                <span class="mock__dot"></span><span class="mock__dot"></span><span class="mock__dot"></span>
+                <span class="mock__title">Reconciliation · Week of 4/20</span>
+              </div>
+              <div class="mock__body">
+                <div class="recon-row">
+                  <div class="recon-row__claim">CLM-00841 · CPT 97110</div>
+                  <div class="recon-row__era">ERA: $120.00</div>
+                  <div class="recon-row__bank">Bank: $119.00</div>
+                  <div class="recon-row__note tag tag--flag">Zealous fee (-$1.00)</div>
+                </div>
+                <div class="recon-row">
+                  <div class="recon-row__claim">CLM-00842 · Eval</div>
+                  <div class="recon-row__era">ERA: $184.00</div>
+                  <div class="recon-row__bank">Bank: $184.00</div>
+                  <div class="recon-row__note tag tag--ok">Matched</div>
+                </div>
+                <div class="recon-row">
+                  <div class="recon-row__claim">CLM-00780 · CPT 97140</div>
+                  <div class="recon-row__era">ERA: -$42.00</div>
+                  <div class="recon-row__bank">—</div>
+                  <div class="recon-row__note tag tag--warn">Recoupment · 6wk old</div>
+                </div>
+                <div class="recon-row">
+                  <div class="recon-row__claim">CLM-00844 · Eval</div>
+                  <div class="recon-row__era">ERA: $0.00</div>
+                  <div class="recon-row__bank">—</div>
+                  <div class="recon-row__note tag tag--deny">Denied · CO-50</div>
+                </div>
+                <div class="recon-row recon-row--highlight">
+                  <div class="recon-row__claim">CLM-00715 · Manual therapy</div>
+                  <div class="recon-row__era">ERA: $64.00 × 2</div>
+                  <div class="recon-row__bank">Bank: $64.00</div>
+                  <div class="recon-row__note tag tag--deny">Duplicate remittance — $64 overpay</div>
+                </div>
+              </div>
+              <div class="mock__footnote">Mock — illustrative, not live data.</div>
+            </div>
+          </div>
+          <div class="problem__copy">
+            <span class="problem__num">02 — Reconciliation</span>
+            <h2 class="problem__title">After the visit: <em>did the money actually land?</em></h2>
+            <p class="problem__lede">
+              The ERA says 120. The bank shows 119. Six weeks later a recoupment nibbles it back. Your biller books it off a spreadsheet from the RCM director. Nobody has the full picture — until they do.
+            </p>
+            <ul class="problem__list">
+              <li><strong>Full ERA parsing</strong> from the clearinghouse — denials, partial denials, recoupments, contractual adjustments, patient responsibility, payer fees — across payer formats.</li>
+              <li><strong>ERA-to-bank matching</strong> via Plaid. When the ERA says 120 and 119 hits, we name the Zealous dollar.</li>
+              <li><strong>Denials with reasons</strong> — CARC / RARC classification, resolution tracking, biller notes preserved.</li>
+              <li><strong>Point-in-time claims picture</strong> — not "what the EMR shows," but what the payer and the bank agree on right now.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- BUILT FOR MULTI-LOCATION -->
+    <section class="multi" id="multi">
+      <div class="container multi__inner">
+        <div class="section-head section-head--dark reveal">
+          <span class="section-head__eyebrow">Built for MSO structure from day one</span>
+          <h2 class="section-head__title">
+            One parent entity. Sub-practices underneath. Clinicians under those.<br />
+            <em>Payout splits and audit trails all the way down.</em>
+          </h2>
+          <p class="section-head__lede">
+            Most reconciliation tools assume one entity, one bank account, one billing pipeline. That works for one practice. It breaks at three. It's unrecoverable at ten. Our data model is built around nested entities — so as you add divisions, states, or specialties, the pipeline extends instead of shatters.
+          </p>
+        </div>
+
+        <div class="multi__grid reveal">
+          <div class="multi__card">
+            <div class="multi__icon" aria-hidden="true">◆</div>
+            <h3>Nested entity model</h3>
+            <p>MSO → sub-practice → clinician, with payout splits, tax IDs, and ownership percentages encoded — not jammed into a spreadsheet tab.</p>
+          </div>
+          <div class="multi__card">
+            <div class="multi__icon" aria-hidden="true">◇</div>
+            <h3>EMR-agnostic</h3>
+            <p>Works with Prompt, InSync/Sora, WebPT, and others. We pull from the clearinghouse and the bank, not from your biller's posting conventions.</p>
+          </div>
+          <div class="multi__card">
+            <div class="multi__icon" aria-hidden="true">◈</div>
+            <h3>Every payment rail</h3>
+            <p>Direct ACH, payer ERAs, mailed checks, mobile deposits, patient copays. If money can reach you, we can reconcile it.</p>
+          </div>
+          <div class="multi__card">
+            <div class="multi__icon" aria-hidden="true">◇</div>
+            <h3>Multi-specialty ready</h3>
+            <p>OT, PT, SLP under one roof — with discipline-specific modifier logic, payer rules, and denial patterns learned across the whole network.</p>
+          </div>
+        </div>
+
+        <blockquote class="pullquote reveal">
+          <p>"Reconciliation is the trust of the MSO."</p>
+          <cite>— Louis Ezrick, MSO operator &amp; design partner</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section class="impact" id="impact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-head__eyebrow">Proof, not pitch</span>
+          <h2 class="section-head__title">
+            We built Tavia inside our own therapy practice first.<br />
+            <em>The numbers are the ones we ship against.</em>
+          </h2>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat">
+            <div class="stat__num">5 hrs<span class="stat__unit">/wk</span></div>
+            <div class="stat__then">before</div>
+            <div class="stat__arrow" aria-hidden="true">→</div>
+            <div class="stat__now">10–20 min</div>
+            <p class="stat__label">Weekly reconciliation in our own practice. Same scope of work, same payers — just not done by hand anymore.</p>
+          </div>
+          <div class="stat">
+            <div class="stat__num">$3,000</div>
+            <div class="stat__label stat__label--solo">Overpayment caught in the first week — a duplicate remittance entry on the RCM director's spreadsheet that nobody had flagged.</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">20 hrs<span class="stat__unit">/mo</span></div>
+            <div class="stat__then">before</div>
+            <div class="stat__arrow" aria-hidden="true">→</div>
+            <div class="stat__now">automated</div>
+            <p class="stat__label">Design partner MSO — reconciliation across ACH transfers, MSO billing spreadsheets, and three check intake methods, onto one dashboard.</p>
+          </div>
+          <div class="stat">
+            <div class="stat__num">$0.21</div>
+            <div class="stat__label stat__label--solo">The takeback amount that broke the last internal tool. We reconcile structurally so 21-cent edge cases don't take the whole system down.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="cases">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-head__eyebrow">Who we serve</span>
+          <h2 class="section-head__title">From solo clinical owners to 20+ clinic super-groups.</h2>
+          <p class="section-head__lede">Three shapes of customer, one underlying problem: money coming in from too many places to track by hand.</p>
+        </div>
+
+        <div class="cases__grid reveal">
+          <article class="case">
+            <div class="case__tag">Solo clinical owner</div>
+            <h3>"It's tedious. Could take me a couple days."</h3>
+            <p>Early-intervention practice. ~15–20 active kids. Denials that never get worked because there's no time. Patient responsibility tracked in a paper planner. Tavia takes the reconciliation off her plate so she can see patients.</p>
+            <div class="case__footer">Pediatric therapy · Single location</div>
+          </article>
+          <article class="case case--highlight">
+            <div class="case__tag">MSO operator</div>
+            <h3>"Reconciliation is the trust of the MSO."</h3>
+            <p>Out-of-network MSO billing multiple sub-practices. 6–7 person offshore billing team. Caught a $3K overpayment from a duplicate spreadsheet entry. Wants a single source of truth across Saya ACH, RCM spreadsheets, and Chase deposits.</p>
+            <div class="case__footer">PT &amp; OT MSO · Multi-entity</div>
+          </article>
+          <article class="case">
+            <div class="case__tag">Super-group at scale</div>
+            <h3>"I won't automate what I can't trust."</h3>
+            <p>$25M revenue, 20+ clinics, 140K visits/year, 20% annual growth. Running Prompt + P-Verify + Copper Hill. Wants one central source of truth for payer rules, full deductible/OOP visibility, scale without tripling ops headcount.</p>
+            <div class="case__footer">PT super-group · 20+ clinics</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER / CREDIBILITY -->
+    <section class="founder" id="founder">
+      <div class="container founder__inner">
+        <div class="founder__copy reveal">
+          <span class="section-head__eyebrow">Who's building this</span>
+          <h2 class="founder__title">Built by the COO of a multi-state therapy practice — <em>because she needed it herself.</em></h2>
+          <p>
+            Amanda Kichline built the first version of Tavia Health to solve the reconciliation problem in her own multi-state, multi-discipline therapy group. Before Tavia she led early operations at Charlie Health, scaling clinical operations across multiple states. She studied healthcare policy at Cornell, and she's a former athlete with hypermobile joints — so the rehab side isn't theoretical.
+          </p>
+          <p>
+            She's joined by Reema Sayed (CEO, growth &amp; fundraising) and Shweta Shrivastava (CTO, engineering). Tavia is venture-backed (Precursor) with two signed MSO/IPA design partners.
+          </p>
+          <ul class="founder__credlist">
+            <li><strong>Pre-seed</strong>, Precursor-led, mid-raise to ~$2M seed</li>
+            <li><strong>Two signed</strong> MSO / IPA design partners</li>
+            <li><strong>Built inside</strong> a working therapy practice, not in a deck</li>
+          </ul>
+        </div>
+        <aside class="founder__card reveal">
+          <div class="founder__quote-mark" aria-hidden="true">"</div>
+          <p class="founder__quote">
+            It used to take me five hours a week to match ERAs to bank deposits across multiple payers, tax IDs, and check types. Now it takes ten to twenty minutes. The only time I spend is reviewing the edge cases the system flags.
+          </p>
+          <div class="founder__who">
+            <div class="founder__name">Amanda Kichline</div>
+            <div class="founder__role">COO &amp; Co-Founder, Tavia Health</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- GUARANTEE + CTA -->
+    <section class="cta" id="cta">
+      <div class="container cta__inner">
+        <div class="cta__guarantee reveal">
+          <div class="cta__badge">30-day guarantee</div>
+          <p class="cta__guarantee-text">If we can't cut your reconciliation time in half within 30 days, you don't pay for that month.</p>
+        </div>
+        <h2 class="cta__title reveal">See your own reconciliation gap in 30 minutes.</h2>
+        <p class="cta__lede reveal">
+          We'll take a slice of your ERAs and bank data, run it through Tavia, and show you what we find. No invoice. No strings. If it's not clearly better than what you're doing today, we walk away.
+        </p>
+        <div class="cta__actions reveal">
+          <a href="mailto:amanda@taviahealth.io" class="btn btn--accent btn--lg">Book a 30-min call</a>
+          <a href="mailto:amanda@taviahealth.io" class="btn btn--ghost btn--lg btn--ghost-light">Email the founder</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__mark" aria-hidden="true"></span>
+        <span>Tavia Health</span>
+      </div>
+      <div class="footer__meta">
+        <span>© 2026 Tavia Health, Inc.</span>
+        <a href="mailto:amanda@taviahealth.io">amanda@taviahealth.io</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
