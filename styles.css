@@ -1575,11 +1575,11 @@ a:focus-visible {
 
 /* Footer ------------------------------------------------------------------ */
 .footer {
-  padding: var(--sp-6) 0;
-  background: var(--ink);
-  color: rgba(251, 248, 242, 0.55);
+  padding: var(--sp-5) 0;
+  background: var(--cream);
+  color: var(--ink-muted);
   font-size: var(--fs-sm);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid var(--line);
 }
 .footer__inner {
   display: flex;
@@ -1592,7 +1592,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   gap: var(--sp-3);
-  color: var(--cream);
+  color: var(--ink);
   font-family: var(--font-display);
   font-weight: 600;
 }
@@ -1600,8 +1600,10 @@ a:focus-visible {
   display: flex;
   gap: var(--sp-5);
   align-items: center;
+  color: var(--ink-soft);
 }
-.footer__meta a:hover { color: var(--chartreuse); }
+.footer__meta a { color: var(--ink-soft); text-decoration: none; }
+.footer__meta a:hover { color: var(--coral-500); text-decoration: underline; }
 
 /* Responsive -------------------------------------------------------------- */
 @media (max-width: 960px) {
